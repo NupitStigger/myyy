@@ -1,0 +1,111 @@
+/* Жалпы стильдер */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Асты ақ */
+    color: #333;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header - Жоғары жағы (Қара) */
+header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 60px 0 80px 0;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Оң жақ жоғарғы бұрыштағы батырма */
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background-color: #7e8995;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Фото */
+.photo-wrapper {
+    margin-top: -75px;
+}
+
+.photo-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    background-color: #ccc;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Тізім мен Батырмалар */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+ul li {
+    background: #e0e0e0;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* --- ИНВЕРСИЯ РЕЖИМІ --- */
+/* Түнгі режимде: Жоғары ақ, асты қара */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+body.dark-mode .photo-placeholder {
+    border-color: #1a1a1a;
+}
+
+body.dark-mode ul li {
+    background: #444;
+}
+
+body.dark-mode .social-btn {
+    background-color: #f4f4f4;
+    color: #1a1a1a;
+}
